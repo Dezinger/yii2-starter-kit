@@ -140,13 +140,9 @@ $bundle = BackendAsset::register($this);
                             'badgeBgClass'=>'label-success',
                         ],
                         [
-                            'label'=>Yii::t('backend', 'Content'),
-                            'url' => '#',
+                            'label'=>Yii::t('backend', 'Pages'),
+                            'url' => ['/page/index'],
                             'icon'=>'<i class="fa fa-edit"></i>',
-                            'options'=>['class'=>'treeview'],
-                            'items'=>[
-                                ['label'=>Yii::t('backend', 'Static pages'), 'url'=>['/page/index'], 'icon'=>'<i class="fa fa-angle-double-right"></i>'],
-                            ]
                         ],
                         [
                             'label'=>Yii::t('backend', 'System'),
