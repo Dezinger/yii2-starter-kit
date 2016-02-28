@@ -33,7 +33,6 @@ return [
     'Base Url' => 'Url Base',
     'Body' => 'Cuerpo',
     'Caption' => 'Leyenda',
-    'Carousel ID' => 'Carrusel ID',
     'Category' => 'Categoría',
     'Comment' => 'Comentario',
     'Component' => 'Componente',

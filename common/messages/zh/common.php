@@ -33,7 +33,6 @@ return [
     'Base Url' => 'Base Url',
     'Body' => 'Body',
     'Caption' => '标题',
-    'Carousel ID' => 'Carousel ID',
     'Category' => '分类',
     'Comment' => '评论',
     'Component' => '组件',

@@ -33,7 +33,6 @@ return [
     'Base Url' => 'Базовый Url',
     'Body' => 'Текст',
     'Caption' => 'Текст',
-    'Carousel ID' => 'ID карусели',
     'Category' => 'Категория',
     'Comment' => 'Комментарий',
     'Component' => 'Компонент',
