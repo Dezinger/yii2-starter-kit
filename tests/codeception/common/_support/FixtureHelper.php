@@ -2,9 +2,6 @@
 
 namespace tests\codeception\common\_support;
 
-use tests\codeception\common\fixtures\ArticleAttachmentFixture;
-use tests\codeception\common\fixtures\ArticleCategoryFixture;
-use tests\codeception\common\fixtures\ArticleFixture;
 use tests\codeception\common\fixtures\RbacAuthAssignmentFixture;
 use tests\codeception\common\fixtures\UserFixture;
 use Codeception\Module;
@@ -56,18 +53,6 @@ class FixtureHelper extends Module
     public function fixtures()
     {
         return [
-            'article' => [
-                'class' => ArticleFixture::className(),
-                'dataFile' => '@tests/codeception/common/fixtures/data/article.php',
-            ],
-            'article_category' => [
-                'class' => ArticleCategoryFixture::className(),
-                'dataFile' => '@tests/codeception/common/fixtures/data/article_category.php',
-            ],
-            'article_attachment' => [
-                'class' => ArticleAttachmentFixture::className(),
-                'dataFile' => '@tests/codeception/common/fixtures/data/article_attachment.php',
-            ],
             'user' => [
                 'class' => UserFixture::className(),
                 'dataFile' => '@tests/codeception/common/fixtures/data/user.php',
