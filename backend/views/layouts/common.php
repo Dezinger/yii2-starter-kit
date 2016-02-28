@@ -169,16 +169,6 @@ $bundle = BackendAsset::register($this);
                             'icon'=>'<i class="fa fa-cogs"></i>',
                             'options'=>['class'=>'treeview'],
                             'items'=>[
-                                [
-                                    'label'=>Yii::t('backend', 'i18n'),
-                                    'url' => '#',
-                                    'icon'=>'<i class="fa fa-flag"></i>',
-                                    'options'=>['class'=>'treeview'],
-                                    'items'=>[
-                                        ['label'=>Yii::t('backend', 'i18n Source Message'), 'url'=>['/i18n/i18n-source-message/index'], 'icon'=>'<i class="fa fa-angle-double-right"></i>'],
-                                        ['label'=>Yii::t('backend', 'i18n Message'), 'url'=>['/i18n/i18n-message/index'], 'icon'=>'<i class="fa fa-angle-double-right"></i>'],
-                                    ]
-                                ],
                                 ['label'=>Yii::t('backend', 'Key-Value Storage'), 'url'=>['/key-storage/index'], 'icon'=>'<i class="fa fa-angle-double-right"></i>'],
                                 ['label'=>Yii::t('backend', 'File Storage'), 'url'=>['/file-storage/index'], 'icon'=>'<i class="fa fa-angle-double-right"></i>'],
                                 ['label'=>Yii::t('backend', 'Cache'), 'url'=>['/cache/index'], 'icon'=>'<i class="fa fa-angle-double-right"></i>'],
