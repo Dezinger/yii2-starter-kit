@@ -7,12 +7,13 @@ Yii::setAlias('@backend', realpath(__DIR__.'/../../backend'));
 Yii::setAlias('@console', realpath(__DIR__.'/../../console'));
 Yii::setAlias('@storage', realpath(__DIR__.'/../../storage'));
 Yii::setAlias('@tests', realpath(__DIR__.'/../../tests'));
+Yii::setAlias('@api', realpath(__DIR__.'/../../api'));
 
 // Url Aliases
 Yii::setAlias('@frontendUrl', getenv('FRONTEND_URL'));
 Yii::setAlias('@backendUrl', getenv('BACKEND_URL'));
 Yii::setAlias('@storageUrl', getenv('STORAGE_URL'));
-
+Yii::setAlias('@apiUrl', getenv('API_URL'));
 
 // Other
 require(__DIR__ . '/../shortcuts.php');
