@@ -3,12 +3,21 @@
 namespace api\modules\v1\resources;
 
 use common\models\Page AS Pages;
+use common\components\XmlCDATAResponseFormatter;
 
 class Page extends Pages
 {
     
     public function fields() 
     {
-        return ['id', 'slug', 'title', 'body'];
+        return [
+            'id', 
+            'slug', 
+            'title', 
+            'body' => function() {
+                return [$this->body, XmlCDATAResponseFormatter::CDATA => true];
+            }
+        ];
     }
+    
 }
