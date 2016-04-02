@@ -3,7 +3,7 @@
 namespace api\modules\v1\resources;
 
 use common\models\Page AS Pages;
-use common\components\XmlCDATAResponseFormatter;
+use common\components\formatters\XmlCDATAResponseFormatter;
 
 class Page extends Pages
 {

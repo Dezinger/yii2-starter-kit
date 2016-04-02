@@ -17,12 +17,13 @@ $config = [
         'response' => [
             'formatters' => [
                 //Formats the given data into an XML response content with CDATA support.
-                Response::FORMAT_XML => 'common\components\XmlCDATAResponseFormatter'
+                Response::FORMAT_XML => 'common\components\formatters\XmlCDATAResponseFormatter'
             ]
         ],
         
         'request' => [
             'cookieValidationKey' => getenv('FRONTEND_COOKIE_VALIDATION_KEY')
+            //'enableCookieValidation' => false
         ],
         
         'user' => [
@@ -33,18 +34,12 @@ $config = [
             'as afterLogin' => 'common\behaviors\LoginTimestampBehavior'
         ]
     ],
+    
+    'as locale' => [
+        'class' => 'common\behaviors\LocaleBehavior',
+        'enablePreferredLanguage' => true
+    ]
 ];
 
-
-if (YII_ENV_PROD) {
-    // Maintenance mode
-    $config['bootstrap'] = ['maintenance'];
-    $config['components']['maintenance'] = [
-        'class' => 'common\components\maintenance\Maintenance',
-        'enabled' => function ($app) {
-            return $app->keyStorage->get('frontend.maintenance') === 'enabled';
-        }
-    ];
-}
 
 return $config;
