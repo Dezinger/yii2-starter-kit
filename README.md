@@ -5,10 +5,10 @@ This is lite version of original [Yii2 start application template](https://githu
 ## ADD NEW FEATURES 
 
 - RESTful API module as standalone Yii2 app
-- ...
+- XmlCDATAResponseFormatter formats the given data into an XML response content with CDATA support
+
 
 ## REMOVE EXCESSIVE FEATURES
 
 - Content management components: articles, categories, editable menu, editable carousels, text blocks
 - [Elfinder Extension](https://github.com/MihailDev/yii2-elfinder)
-- ...
