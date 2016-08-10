@@ -28,7 +28,7 @@ $this->params['breadcrumbs'][] = $this->title;
         'attributes' => [
             'id',
             'component',
-            'base_url:url',
+            'base_url',
             'path',
             'type',
             'size',

@@ -101,7 +101,8 @@ $config = [
 
         'fileStorage' => [
             'class' => '\trntv\filekit\Storage',
-            'baseUrl' => '@storageUrl/source',
+            'baseUrl' => '/source',
+            'domain' => '@storageUrl',
             'filesystem' => [
                 'class' => 'common\components\filesystem\LocalFlysystemBuilder',
                 'path' => '@storage/web/source'

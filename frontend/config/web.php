@@ -43,6 +43,7 @@ $config = [
             }
         ],
         'request' => [
+            'baseUrl' => Yii::getAlias('@frontendUrl'),
             'cookieValidationKey' => env('FRONTEND_COOKIE_VALIDATION_KEY')
         ],
         'user' => [

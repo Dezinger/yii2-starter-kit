@@ -23,6 +23,12 @@
     "issues": "https://github.com/trntv/yii2-starter-kit/issues?state=open",
     "source": "https://github.com/trntv/yii2-starter-kit"
   },
+  "repositories": [
+        {
+            "type": "git",
+            "url":  "https://github.com/Dezinger/yii2-file-kit"
+        }
+  ],
   "require": {
     "php": ">=5.5.0",
     "ext-intl": "*",
@@ -35,7 +41,7 @@
     "mihaildev/yii2-elfinder": "^1.0",
     "trntv/yii2-aceeditor": "^2.0",
     "trntv/probe": "^0.2",
-    "trntv/yii2-file-kit": "^1.0.0",
+    "trntv/yii2-file-kit": "dev-master@dev",
     "trntv/yii2-glide": "^1.0.0",
     "trntv/yii2-datetime-widget": "^1.0.0",
     "trntv/cheatsheet": "^0.1@dev",
