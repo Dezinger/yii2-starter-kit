@@ -1,6 +1,7 @@
 # Yii 2 Starter Kit Lite
 
 This is lite version of original [Yii2 start application template](https://github.com/trntv/yii2-starter-kit).
+All installation and usage process is same as in original. [Check original README](README_ORIGINAL.md).
 
 ## ADD NEW FEATURES 
 
